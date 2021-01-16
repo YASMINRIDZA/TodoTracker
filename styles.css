@@ -1,0 +1,28 @@
+body {
+    padding: 15px;
+    background-color: coral;
+    font-family: sans-serif;
+  }
+
+#title{
+    padding: 10px;
+    font-size: 36px;
+    border: 2px solid white;
+    width: 250px;
+  }
+
+#todo-header{
+    font-size: 24px;
+  }
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    width: 250px
+  }
+
+li {
+     background-color: grey;
+     padding: 15px; //jarak sekeliling content (social distancing)
+     margin-bottom: 15px; //jarak antara padding 
+   }
