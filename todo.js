@@ -19,7 +19,7 @@ var form = document.querySelector('form');
       input.value = '';
     });
 
-
+    //todoMaker function creates a new li tag everytime it is invoked
     var todoMaker = function(text){
       var todo = document.createElement('li');
       todo.textContent = text;
