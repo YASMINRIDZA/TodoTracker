@@ -1,3 +1,4 @@
+//querySelector is used to grab the element in the DOM
 var form = document.querySelector('form');
     var todoList = document.querySelector('ul');
     var button = document.querySelector('button');
@@ -9,7 +10,7 @@ var form = document.querySelector('form');
     var storage = JSON.parse(localStorage.getItem('todos'))
     //when we refresh/close browser, prev data will be stored in this storage
 
-
+    //addEventListener attach event handler to the element 
     form.addEventListener('submit', function(e){
       e.preventDefault();
       todosArray.push(input.value);
