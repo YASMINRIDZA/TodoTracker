@@ -11,12 +11,14 @@ var form = document.querySelector('form');
     //when we refresh/close browser, prev data will be stored in this storage
 
     //addEventListener attach event handler to the element 
+    //'submit' event is same as we press enter on our keyboard
+    //e stands for event // 
     form.addEventListener('submit', function(e){
+      todoMaker(input.value);
+      input.value = '';
       e.preventDefault();
       todosArray.push(input.value);
       localStorage.setItem('todos', JSON.stringify(todosArray)); //apa2 data sebelum masuk LS, kena convert kpd string dulu
-      todoMaker(input.value);
-      input.value = '';
     });
 
     //todoMaker function creates a new li tag everytime it is invoked
