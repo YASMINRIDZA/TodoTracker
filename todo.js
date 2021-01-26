@@ -22,10 +22,10 @@ var form = document.querySelector('form');
     });
 
     //todoMaker function creates a new li tag everytime it is invoked
-    var todoMaker = function(text){
+    var todoMaker = function(text){ //pass the input.value as the argument for text parameter
       var todo = document.createElement('li');
-      todo.textContent = text;
-      todoList.appendChild(todo);
+      todo.textContent = text; //the text here refers to every input.value & assign it to todo.textContext property
+      todoList.appendChild(todo); //adds every input.value as the child of ul tag
     }
 
     for(var i=0; i<storage.length; i++){
